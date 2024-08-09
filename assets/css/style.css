@@ -4,11 +4,47 @@
   box-sizing: border-box;
 }
 
+/* Вказування фонового кольору елементу */
+body {
+  background-color: lightcyan;
+}
+
+/* Для всіх силок на сторінці */
+a {
+  /* 
+    Керує відображенням підкреслень та деяких інших декорацій тексту  
+  */
+  /*
+    Визначає стиль ліній
+    solid | double | dotted | dashed | wavy
+    text-decoration-style: solid; 
+  */
+  /* text-decoration-line */
+  /* text-decoration-color: red; */
+  text-decoration: none;
+}
+
+a:visited {
+  color: black
+}
+
+.header_menu_element {
+  /* 
+    Відображення великих / маленьких літер у тексті
+    none | capitalize | uppercase | lowercase
+  */
+  text-transform: capitalize;
+}
+
+/* При наводжені курсором на силку вона буде підкреслюватися завдяки псевдоселектору :hover */
+.header_link:hover {
+  text-decoration: underline;
+}
+
 /*  
   Керування горизонтальним розміщенням тексту
   left | right | center | justify
 */
-
 .blog {
   text-align: center;
 }
