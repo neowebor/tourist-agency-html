@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="../css/block-model.css">
   </head>
   <body>
-    <h1>Блочна модель</h1>
+    <header>
+      <h1>Блочна модель</h1>
+    </header>
+    <main>
+      <article>
+        <h2>Це три блочних елемента (display block model)</h2>
+        <p>Розтягується на всю ширину незалежно від контенту (якщо не задана ширина та висота). Також на блочну модель працюють властивості margin-top/bottom, paddint-top/bottom</p>
 
-    <div class="block-elem">Це блочний елемент 1</div>
-    <div class="block-elem">Це блочний елемент 2</div>
-    <div class="block-elem">Це блочний елемент 3</div>
+        <section class="wrap">
+          <h2>Display block:</h2>
+          <div class="block-elem">First</div>
+          <div class="block-elem">Second</div>
+          <div class="block-elem">Third</div>
+        </section>
+      </article>
 
-    <span class="inline-elem">Це інлайновий елемент 1</span>
-    <span class="inline-elem">Це інлайновий елемент 2</span>
-    <span class="inline-elem">Це інлайновий елемент 3</span>
-
-    <div class="inline-elem">Виглядаю як рядковий елемент</div>
-    <div class="inline-elem">Виглядаю як рядковий елемент</div>
-    <div class="inline-elem">Виглядаю як рядковий елемент</div>
+      <article>
+        <h2>Це три інлайнових елемента (рядкових)</h2>
+        <p>Він не починаєтсья з новой строки. Висота та ширина не працюють. Не працюють margin-top/bottom, paddint-top/bottom </p>
+        <section class="wrap">
+          <h2>Display inline:</h2>
+          <span class="inline-elem">First</span>
+          <span class="inline-elem">Second</span>
+          <span class="inline-elem">Third</span>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

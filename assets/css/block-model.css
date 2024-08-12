@@ -1,13 +1,21 @@
 .block-elem {
   /* вказання режиму відбраження елементу */
-
+  /* влистивість display є у кожного тега і йде за замовченням. Її можно переопределити але не бажано. */
   display: block;
 
   background-color: aqua;
-  width: 500px;
-  height: 50px;
+
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.wrap {
+  text-align: center;
 }
 
 .inline-elem {
+  /* Для наглядності */
+  display: inline;
+
   background-color: lightgreen;
 }
