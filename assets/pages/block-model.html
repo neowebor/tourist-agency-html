@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/block-model.css">
+    <link rel="stylesheet" href="../css/block-model.css" />
   </head>
   <body>
     <header>
@@ -13,7 +13,11 @@
     <main>
       <article>
         <h2>Це три блочних елемента (display block model)</h2>
-        <p>Розтягується на всю ширину незалежно від контенту (якщо не задана ширина та висота). Також на блочну модель працюють властивості margin-top/bottom, paddint-top/bottom</p>
+        <p>
+          Розтягується на всю ширину незалежно від контенту (якщо не задана
+          ширина та висота). Також на блочну модель працюють властивості
+          margin-top/bottom, paddint-top/bottom
+        </p>
 
         <section class="wrap">
           <h2>Display block:</h2>
@@ -22,15 +26,33 @@
           <div class="block-elem">Third</div>
         </section>
       </article>
-
+      <hr />
       <article>
         <h2>Це три інлайнових елемента (рядкових)</h2>
-        <p>Він не починаєтсья з новой строки. Висота та ширина не працюють. Не працюють margin-top/bottom, paddint-top/bottom </p>
+        <p>
+          Він не починаєтсья з новой строки. Висота та ширина не працюють. Не
+          працюють margin-top/bottom, paddint-top/bottom
+        </p>
         <section class="wrap">
           <h2>Display inline:</h2>
           <span class="inline-elem">First</span>
           <span class="inline-elem">Second</span>
           <span class="inline-elem">Third</span>
+        </section>
+      </article>
+      <hr />
+      <article>
+        <h2>Це чотири інлайн-блокових елемента</h2>
+        <p>
+          Це суміш блокової та інлайнової коробки. Зазвичай використовується
+          частіше ніж inline.
+        </p>
+        <section class="wrap">
+          <h2>Display inline-block</h2>
+          <span class="inline-block-elem">First</span>
+          <span class="inline-block-elem">Second</span>
+          <span class="inline-block-elem">Third</span>
+          <span class="inline-block-elem">Fourth</span>
         </section>
       </article>
     </main>
