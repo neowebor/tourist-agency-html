@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article {
+  border: 5px dotted green;
+  padding: 20px;
+  margin-bottom: 5px;
+  background-color: darkblue;
+  color: white;
+  width: 100vw;
+}
+
+.article-heading {
+  margin-bottom: 10px;
+}
+
+.article-text {
+  color: yellow;
+  border: inherit;
+}
+
+.link {
+  color: inherit;
+}
