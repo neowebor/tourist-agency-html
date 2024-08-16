@@ -34,3 +34,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.div {
+  border: 10px solid black;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+}
