@@ -3,3 +3,30 @@
   padding: 0; */
   box-sizing: border-box;
 }
+
+table {
+  background-color: chocolate;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 24px;
+  text-align: left;
+  /* Аналог абзаца */
+  text-indent: 10px;
+
+}
+
+tr {
+
+}
+
+td {
+  padding: 10px;
+  border: 4px solid;
+}
+
+th {
+  padding: 10px;
+  border: 4px solid;
+}
