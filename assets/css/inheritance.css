@@ -25,3 +25,10 @@
 .link {
   color: inherit;
 }
+
+/* Растягиваю высоту - изменяется ширина. Растягиваю в ширину - изменяется высота */
+.box {
+  width: 30vmin;
+  height: 30vmin;
+  background-color: aquamarine;
+}
