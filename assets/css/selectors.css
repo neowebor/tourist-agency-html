@@ -85,3 +85,50 @@ h2 ~ p {
   text-decoration: line-through solid black;
 }
 
+
+/* 
+  CSS - змінні
+*/
+
+html,
+:root {
+
+  /* 
+    --назва-змінної: значення_css_властивості;
+  */
+
+  --text-color: green;
+  --big-padding: 40px; 
+
+  /* 
+    застосування CSS - змінних
+  */
+  color: var(--text-color);
+}
+
+
+/* 
+  Псевдокласи
+
+  :root = html
+
+*/
+
+.link {
+  display: inline-block;
+  color: blue;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid black;
+  background: lightgreen;
+  text-align: center;
+  width: 120px;
+}
+
+button[class="link"] {
+  width: 152px;
+}
+
+.link:not(button) {
+  font-style: italic;
+}
