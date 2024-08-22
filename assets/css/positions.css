@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 150vh;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid;
+  text-align: center;
+}
+
+.normal-box {
+  top: 40vh;
+  left: 40vh;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+}
+
+.rectangle {
+  width: 200px;
+  bottom: 0;
+  left: 0;
+}
+
+.small-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.box1 {
+  left: 200px;
+  bottom: -200px;
+}
+
+.box2 {
+  left: 100px;
+}
