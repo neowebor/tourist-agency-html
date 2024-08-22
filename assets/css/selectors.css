@@ -149,6 +149,24 @@ html,
   margin-bottom: 16px;
 }
 
+.article-heading::before {
+  content: '<>';
+  display: inline-block;
+  background-color: brown;
+  /* width: 50px; */
+  height: 24px;
+  margin-right: 10px;
+}
+
+.article-heading::after {
+  content: '><';
+  display: inline-block;
+  background-color: aqua;
+  /* width: 50px; */
+  height: 24px;
+  margin-left: 10px;
+}
+
 .article-text {
   text-align: justify;
   margin-bottom: 8px;
@@ -164,6 +182,10 @@ html,
 .article-text::first-line {
   background-color: aquamarine;
   text-decoration: underline solid;
+}
+
+.article-text::selection {
+  background-color: limegreen;
 }
 
 .ul {
