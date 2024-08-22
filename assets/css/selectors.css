@@ -6,84 +6,84 @@
   селектор який працює для всіх елементів з атрибутом title
 */
 
-[title] {
+/* [title] {
   background-color: aquamarine;
-}
+} */
 
 /* 
   Селектор який працює для усіх елементів з атрибутом title з значенням test title
 */
 
-[title="Test title"] {
+/* [title="Test title"] {
   font-weight: bold;
   font-size: 24px;
-}
+} */
 
 /* 
   Селектор який працює для усіх елементів з атрибутом title зі значенням, яке розпочинається зі слова other
 */
 
-[title^="other"] {
+/* [title^="other"] {
   border: 3px solid red;
-}
+} */
 
 /* 
   Селектор який працює для усіх елементів з атрибутом з атрибутом title зі значенням, всередені якого є слово animal
 */
 
-[title~="animal"] {
+/* [title~="animal"] {
   width: 200px;
   height: 200px;
-}
+} */
 
 /* 
   Комбінатор кома (A, B)
   Одночасно застосовує правило для кількох селекторів, розділених комами
 */
 
-h1, 
+/* h1, 
 h2 {
   text-align: right;
-}
+} */
 
 /* 
   Комбінатор дитячого елементу (A>B) 
   застосовує правило для селектору B якщо він напряму сидить у елементі з селектором A
 */
 
-article > p {
+/* article > p {
   color: red;
-}
+} */
 
-nav > ul > li > a {
+/* nav > ul > li > a {
   color: yellow;
-}
+} */
 
 /* 
   Комбінатор елементу - нащадка (A B)
 */
 
-article p {
+/* article p {
   font-style: italic;
-}
+} */
 
 /*  
   Комбінатор прямих сусідів (A + B)
   застосовує правило для селектору B якщо він сидить з селектором А на одному рівні вкладеності
 */
 
-h2 + p {
+/* h2 + p {
   padding: 20px;
-}
+} */
 
 /* 
   Комбінатор всіх сусідів (A ~ B)
   застосовує правило для селектору B якщо він сидить з селектором А на одному рівні вкладеності
 */
 
-h2 ~ p {
+/* h2 ~ p {
   text-decoration: line-through solid black;
-}
+} */
 
 
 /* 
@@ -103,7 +103,7 @@ html,
   /* 
     застосування CSS - змінних
   */
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 
@@ -125,10 +125,51 @@ html,
   width: 120px;
 }
 
-button[class="link"] {
+/* button[class="link"] {
   width: 152px;
+} */
+
+/* .link:not(button) {
+  font-style: italic;
+} */
+
+
+.article {
+  width: 600px;
+  padding: 20px;
+  border: 5px solid red;
+  border-radius: 15px;
+  margin: 30px 0;
 }
 
-.link:not(button) {
+.article-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.article-text {
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.article-text::first-letter {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
   font-style: italic;
+}
+
+.article-text::first-line {
+  background-color: aquamarine;
+  text-decoration: underline solid;
+}
+
+.ul {
+  padding-left: 20px;
+}
+
+.li-item::first-letter {
+  color: red;
 }
