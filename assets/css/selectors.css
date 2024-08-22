@@ -147,24 +147,29 @@ html,
   font-weight: bold;
   text-align: center;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.article-heading::before,
+.article-heading::after  {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+  top: 0; 
 }
 
 .article-heading::before {
-  content: '<>';
-  display: inline-block;
   background-color: brown;
-  /* width: 50px; */
-  height: 24px;
-  margin-right: 10px;
+  left: 0;
 }
 
 .article-heading::after {
-  content: '><';
-  display: inline-block;
   background-color: aqua;
-  /* width: 50px; */
-  height: 24px;
-  margin-left: 10px;
+  right: 0;
 }
 
 .article-text {
