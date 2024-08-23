@@ -22,3 +22,18 @@
 .translate:hover {
   transform: translate(50px, 100px);
 }
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 5px solid red;
+}
+
+.translate-center {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
